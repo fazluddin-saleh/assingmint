@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	body{
+		margin: 0;
+		padding: 0;
+	}
+		.regestar{
+
+			width: 100%;
+			background-color: lightblue;
+			
+		}
+		.contener{
+			border: 5px solid lightpink;
+
+		}
+
+	.regestar p.title{
+		text-align: center;
+		font-size: 30px;
+		font-weight: bold;
+		margin-bottom: 0;
+	} 
+	.regestar .lin{
+		border-top: 2px solid #fff;
+		margin:0 auto;
+		width: 60%
+
+	}
+	p{
+		margin: 0;
+		padding: 0;
+	}
+	.regestar p.name ,p.last ,p.middle ,p.phone,p.address,p.email ,p.password,p.retype-password{
+		margin-left: 100px;
+		margin-bottom: 0px;
+		font-size: 24px;
+	}
+	.regestar .inp-name ,.inp-last ,.inp-middle ,.inp-phone-cod,.inp-phone,.inp-email,.inp-password,.inp-retype-password{
+		width: 80%;
+		margin-left: 100px;
+		border: 0;
+		height: 30px;
+		font-size: 18px;
+	}
+	.regestar .text-address{
+		
+		margin-left: 100px;
+		border: 0;
+		width: 80%;
+		font-size: 18px;
+	}
+	.regestar .spn-course ,.spn-gender {
+			margin-left: 100px;
+		margin-bottom: 0px;
+		font-size: 24px;	
+	}
+	.regestar .form-gender{
+		margin-left: 100px;
+	}
+	.regestar .submit{
+		width: 80%;
+		margin-left: 100px;
+		border: none;
+		background-color: green;
+		color: #fff;
+		height: 30px;
+	
+		font-size: 18px;
+	}
+	</style>
+</head>
+<body>
+	<div class="regestar">
+		<div class="contener">
+		<p class="title">Student Registeration Form</p>
+		<div class="lin"></div>
+		<form>
+		<p class="name">Firstname:</p>
+		<input class="inp-name" placeholder="Firsname" type="text" name="name">
+		<p class="middle">Middlename:</p>
+		<input class="inp-middle" placeholder="Middlename" type="text" name="meddlename">
+		<p class="last">Lastname:</p>
+		<input class="inp-last" placeholder="Lastname" type="text" name="Lastname">
+		<br><br>
+		
+		<span class="spn-course">course:</span>
+		<select class="select-course">
+			<option value="coure">coure</option>
+			<option value="php">php</option>
+			<option value="java">java</option>
+			<option value="pythone">pythone</option>
+			<option value="HTML">HTML</option>
+			<option value="CSS">CSS</option>
+		</select>
+		<br>
+		<br>
+		<span class="spn-gender">Gender:</span>
+		<br>
+		</form>
+
+		<form class="form-gender">
+		  <input type="radio" name="gender" value="male" checked> Male
+		  <input type="radio" name="gender" value="female"> Female
+		  <input type="radio" name="gender" value="other"> Other
+		</form>
+		<form>
+		<p class="phone">phone:</p>
+		<input class="inp-phone-cod" value="+91" pattern="[0-9]{14}" title="this is number" type="text" name="phone-cod" maxlength="14">
+		<br>
+		<br>
+		<input class="inp-phone" placeholder="phone no." type="number" name="phone" maxlength="14">
+		</form>
+		
+		<p class="address">Current Address:</p>
+		<textarea class="text-address" placeholder="Current address" rows="5"  name="address">current addres
+
+		</textarea>
+		
+		<form>
+			<p class="email">Email:</p>
+			<input class="inp-email" placeholder="Enter Email" type="email" name="email">
+		</form>
+		<form method="post">
+		<p class="password">Password:</p>
+		<input class="inp-password" placeholder="Enter Password" type="password" name="password" maxlength="8" pattern=
+		"^(?=.*[0-9])(?=.*[#?!@$%^&*-])
+		(?=.*[A-Za-z]){8}$"
+		 title="this password one digits one symbole six characters">
+		<p class="retype-password">Re-type Password:</p>
+		<input class="inp-retype-password" placeholder="Retype-Pssword" type="password" name="retype-password" maxlength="8" pattern="^(?=.*[0-9])(?=.*[#?!@$%^&*-])
+		(?=.*[A-Za-z]){8}$" title="this password one digits one symbole six characters">
+		<br>
+		<br>
+		<input class="submit" type="submit" name="Register" value="Register">
+		</form>
+		
+		
+</div>
+	</div>
+</body>
+</html>
